@@ -1,0 +1,49 @@
+Strategic Design:
+1) MineField
+2) Cell
+3) Player
+
+
+
+
+Tactical Design:
+1) Task list of test cases
+-> Player makes a move on the mineField
+-> Mine explodes
+-> An adjacent cell tells the number of mines surrounding it
+-> A player should be able to seal a cell
+-> Once the game ends, the player should know the result as a prompt
+-> Once the game ends, the player should not be able to make another move
+-> Only an unexposed cell can be sealed
+-> Only an unexposed and unsealed cell can be exposed
+-> Exposing a mined cell should end the game
+-> When an empty cell is exposed, it will expose all of its unexposed adjacent cells
+
+
+
+Tactical Design:
+Task List Of Features-> Test Case of Simplest Feature -> Minimal Impl -> Update Strategic Design
+
+1) Should be able to expose a tile
+2) Tile should display a number of adjacent tiles who have mines
+3) A person who opens mined tile game should end
+4) When game opens, a random minefield should be setup
+5) Game should have second turn
+6) Game should check after every turn if entire mineField has been exposed or not
+7) There should be a mineField
+8) A player should be able to seal a cell
+9) A player shouldn't able to seal an exposed cell
+10) A player can unseal a cell
+
+
+
+Principles to keep in mind:
+YAGNIy—You Aren't Gonna Need It (yet)
+Last Responsible Moment
+DRY—Don't Repeat Yourself
+SLAP—Single Level of Abstraction Principle
+SRP—Single Responsibility Principle
+
+
+2) Design update based on test cases
+
