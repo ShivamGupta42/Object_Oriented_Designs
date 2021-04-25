@@ -1,0 +1,10 @@
+
+Requirements:
+
+Actors:
+
+Strategic:
+
+Tactical:
+Task List of Feature -> Implement test case of simplest feature
+-> Minimum implementation -> Update Strategic Design

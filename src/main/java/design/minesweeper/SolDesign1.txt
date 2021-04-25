@@ -22,7 +22,7 @@ Tactical Design:
 
 
 Tactical Design:
-Task List Of Features-> Test Case of Simplest Feature -> Minimal Impl -> Update Strategic Design
+Task List Of Features -> Test Case of Simplest Feature -> Minimal Impl -> Update Strategic Design
 
 1) Should be able to expose a tile
 2) Tile should display a number of adjacent tiles who have mines
