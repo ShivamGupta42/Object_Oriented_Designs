@@ -1,0 +1,37 @@
+
+Func/ Non-Func Requirements:
+
+1) Multiple elevator (6)
+2) Floor - 100
+3) Button for requesting elevator
+4) Inside, button for drop floor
+5) Elevator should stop at floors where request to pickup has come for
+6) Elevator should stop at floors where requests to drop  has come for
+7) Elevator should return on the ground floor if no requests are there
+8) All elevators should work in sync
+    - if a request to pickup comes at nth floor, all elevators shouldn't stop at it, only one is fine
+9) Weight of total passengers doesn't matter
+
+
+Non/Func:
+
+1) No requests should be skipped
+2) Elevator should always stop at drop floor
+3) SoS signal should be sent from elevator in case it stops at some floor due to power failure
+4) You should be able to track each elevator
+
+
+
+
+Strategic Design: ( classes and their relationships only)
+1) Elevator management System
+2) Elevators
+
+
+Tactical Design (concrete implementations):
+Task List of Features -> Pick simplest features -> Write test case -> Write minimum implementation -> Update strategic designs
+1) When EMS comes up, all elevators are instantiated.
+2) A person should be able to request an elevator
+
+
+

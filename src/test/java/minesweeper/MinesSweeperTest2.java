@@ -1,6 +1,6 @@
 package minesweeper;
 
-import design.minesweeper.Minesweeper2;
+import designs.minesweeper.Minesweeper2;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

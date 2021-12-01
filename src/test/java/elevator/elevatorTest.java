@@ -1,7 +1,6 @@
 package elevator;
 
-import design.elevator.Direction;
-import design.elevator.ElevatorManagementSystem;
+import designs.elevator.ElevatorManagementSystem;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

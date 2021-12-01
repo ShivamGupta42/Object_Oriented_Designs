@@ -1,7 +1,7 @@
 package elevator;
 
-import design.elevator.Direction;
-import design.elevator.ElevatorManagementSystem;
+import designs.elevator.Direction;
+import designs.elevator.ElevatorManagementSystem;
 
 public class ElTest {
 

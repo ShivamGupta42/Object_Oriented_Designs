@@ -1,14 +1,14 @@
 package minesweeper;
 
-import design.minesweeper.Minesweeper;
+import designs.minesweeper.Minesweeper;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import java.util.concurrent.atomic.AtomicBoolean;
 
-import static design.minesweeper.Minesweeper.CellStatus.*;
-import static design.minesweeper.Minesweeper.GameStatus.*;
-import static design.minesweeper.Minesweeper.CellStatus.UNEXPOSED;
+import static designs.minesweeper.Minesweeper.CellStatus.*;
+import static designs.minesweeper.Minesweeper.GameStatus.*;
+import static designs.minesweeper.Minesweeper.CellStatus.UNEXPOSED;
 import static org.junit.jupiter.api.Assertions.*;
 
 public class MinesweeperTest {
