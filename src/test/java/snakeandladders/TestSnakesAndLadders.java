@@ -1,8 +1,15 @@
-package designs.snakeAndLadders;
+package snakeandladders;
 
 import java.util.Arrays;
 import java.util.List;
 
+import designs.snakeAndLadders.Board;
+import designs.snakeAndLadders.BoardCreationException;
+import designs.snakeAndLadders.Dice;
+import designs.snakeAndLadders.Game;
+import designs.snakeAndLadders.Ladder;
+import designs.snakeAndLadders.Player;
+import designs.snakeAndLadders.Snake;
 import org.junit.jupiter.api.BeforeEach;
 
 public class TestSnakesAndLadders {

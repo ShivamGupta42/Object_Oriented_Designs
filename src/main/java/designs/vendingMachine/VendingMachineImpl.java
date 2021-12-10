@@ -1,11 +1,11 @@
 package designs.vendingMachine;
 
+import designs.vendingMachine.Exceptions.PaymentNotVerified;
+import designs.vendingMachine.Items.Item;
+import designs.vendingMachine.Payment.Payment;
+
 import java.util.Map;
 import java.util.logging.Logger;
-
-import VendingMachine.Exceptions.PaymentNotVerified;
-import VendingMachine.Items.Item;
-import VendingMachine.Payment.Payment;
 
 public class VendingMachineImpl implements VendingMacines {
 	private Logger logger = Logger.getLogger(VendingMacines.class.getName());

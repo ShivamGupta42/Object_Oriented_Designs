@@ -1,9 +1,14 @@
-package designs.commentFilteringSystem;
+package commentFiltering;
 
 import static org.junit.Assert.assertEquals;
 
 import java.util.List;
 
+import designs.commentFilteringSystem.Comment;
+import designs.commentFilteringSystem.MostRecentComment;
+import designs.commentFilteringSystem.Person;
+import designs.commentFilteringSystem.Post;
+import designs.commentFilteringSystem.TopRatedComment;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

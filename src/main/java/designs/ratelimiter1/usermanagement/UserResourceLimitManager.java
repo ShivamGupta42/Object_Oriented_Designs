@@ -1,7 +1,7 @@
 package designs.ratelimiter1.usermanagement;
 
-import ratelimiter.RateLimiter;
-import ratelimiter.TokenBucketRateLimiter;
+import designs.ratelimiter1.ratelimiter.RateLimiter;
+import designs.ratelimiter1.ratelimiter.TokenBucketRateLimiter;
 
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;

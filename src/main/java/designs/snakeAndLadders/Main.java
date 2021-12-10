@@ -3,8 +3,6 @@ package designs.snakeAndLadders;
 import java.util.Arrays;
 import java.util.List;
 
-import SnakeAndLadders.Game.GameMemento;
-
 public class Main {
 
 	public static void main(String[] args) throws BoardCreationException, InterruptedException {
@@ -20,7 +18,7 @@ public class Main {
 		Thread.sleep(3000);
 
 		newGame.pauseGame();
-		GameMemento memento = newGame.saveGame();
+		Game.GameMemento memento = newGame.saveGame();
 		
 		Thread.sleep(3000);
 		Game game2 = new Game(memento);

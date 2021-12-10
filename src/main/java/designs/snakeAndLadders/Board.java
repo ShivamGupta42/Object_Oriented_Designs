@@ -14,7 +14,7 @@ public class Board {
 		ladders = builder.ladders;
 	}
 
-	static class BoardBuilder {
+	public static class BoardBuilder {
 
 		int size;
 		List<Snake> snakes;
@@ -24,17 +24,17 @@ public class Board {
 			this.size = size;
 		}
 
-		BoardBuilder withSnakes(List<Snake> snakes) {
+		public BoardBuilder withSnakes(List<Snake> snakes) {
 			this.snakes = snakes;
 			return this;
 		}
 
-		BoardBuilder withLadders(List<Ladder> ladders) {
+		public BoardBuilder withLadders(List<Ladder> ladders) {
 			this.ladders = ladders;
 			return this;
 		}
 
-		Board build() {
+		public Board build() {
 			return new Board(this);
 		}
 

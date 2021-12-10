@@ -1,7 +1,7 @@
 package designs.ratelimiter1;
 
-import usermanagement.UserKeyGenerator;
-import usermanagement.UserResourceLimitManager;
+import designs.ratelimiter1.usermanagement.UserKeyGenerator;
+import designs.ratelimiter1.usermanagement.UserResourceLimitManager;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;

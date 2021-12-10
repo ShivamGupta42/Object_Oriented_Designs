@@ -41,7 +41,7 @@ class RandomizedSet {
         int rand = random.nextInt(set.size());
         Iterator<Integer> iterator = set.iterator();
         int index=0;
-        while(iterator.hasNext()&&index<rand){
+        while(iterator.hasNext()&&index++<rand){
             iterator.next();
         }
         return iterator.next();

@@ -3,9 +3,9 @@ package designs.vendingMachine;
 import java.util.List;
 import java.util.Map;
 
-import VendingMachine.Exceptions.PaymentNotVerified;
-import VendingMachine.Items.Item;
-import VendingMachine.Payment.Payment;
+import designs.vendingMachine.Exceptions.PaymentNotVerified;
+import designs.vendingMachine.Items.Item;
+import designs.vendingMachine.Payment.Payment;
 
 public interface VendingMacines {
 

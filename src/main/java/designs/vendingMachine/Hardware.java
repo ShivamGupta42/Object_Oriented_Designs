@@ -4,9 +4,9 @@ import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
-import VendingMachine.Items.Item;
-import VendingMachine.Payment.Payment;
-import VendingMachine.Payment.UPIPayment;
+import designs.vendingMachine.Items.Item;
+import designs.vendingMachine.Payment.Payment;
+import designs.vendingMachine.Payment.UPIPayment;
 
 public class Hardware {
 
@@ -15,7 +15,7 @@ public class Hardware {
 	Lock hardwareLock = new ReentrantLock();
 	Condition PaymentFinished = hardwareLock.newCondition();
 
-	Payment fetchPayment() {
+	public Payment fetchPayment() {
 		hardwareLock.lock();
 
 		while (status != TransactionStatus.WAITING) {
@@ -31,7 +31,7 @@ public class Hardware {
 		return payment;
 	}
 
-	Item disburseItem(Item item) {
+	public Item disburseItem(Item item) {
 		System.out.println("Please collect :" + item.getName());
 		return item;
 	}

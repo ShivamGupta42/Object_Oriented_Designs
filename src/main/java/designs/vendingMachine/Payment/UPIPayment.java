@@ -1,6 +1,6 @@
 package designs.vendingMachine.Payment;
 
-import VendingMachine.Hardware;
+import designs.vendingMachine.Hardware;
 
 public class UPIPayment implements Payment {
 

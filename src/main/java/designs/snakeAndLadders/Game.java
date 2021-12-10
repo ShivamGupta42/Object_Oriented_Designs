@@ -80,14 +80,15 @@ public class Game {
 		System.out.println("Moving " + curPlayer.name + " to " + posPosition);
 
 		Optional<Snake> posSnake = board.getPossibleSnake(posPosition);
+		Optional<Ladder> posLadder = board.getPossibleLadder(posPosition);
+
 		if (posSnake.isPresent()) {
 			System.out.println("Bitten by a snake at " + posPosition);
 			posPosition = posSnake.get().tail;
 			System.out.println("Moving to " + posPosition);
 		}
 
-		Optional<Ladder> posLadder = board.getPossibleLadder(posPosition);
-		if (posLadder.isPresent()) {
+		else if (posLadder.isPresent()) {
 			System.out.println("Going up a ladder at " + posPosition);
 			posPosition = posLadder.get().top;
 			System.out.println("Moving to " + posPosition);
