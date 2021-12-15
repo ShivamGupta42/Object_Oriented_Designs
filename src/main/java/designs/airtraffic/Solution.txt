@@ -1,0 +1,38 @@
+
+
+FR:
+1) Single runway
+2) Multiple flights
+3) Schedule for one week  - (dynamically receive request)
+
+NFR:
+1)alerts
+2)performant
+3)reliable
+
+
+
+
+Strategic Design:
+Flight - (takingOffTime, landingTime, onRunwayTime, Arrival/Departure)
+Runway - (Flight)
+Scheduler Thread-
+             - synchronized acceptRequests()
+                -> Maintains Tree-Set of all intervals
+                 -> has the interval overlap logic
+                 -> Based on Arrival/Departure adds an interval into the Treeset
+            - run() (Thread main method)
+            - getNextFlight()
+                 -> polls() the flights which have taken off
+            - checkFlightOnRunway(LocalDateTime futureTime)
+              - queries the Treeset for an interval equal or greater than futureTime and returns response
+
+
+
+Interval  - (startTime/EndTime)
+          - implements a comprable interface
+          - Comparator ->   (a,b) -> a.startTime - b.startTime;
+
+
+
+Tactical Design:
