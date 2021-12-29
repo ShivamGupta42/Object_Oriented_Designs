@@ -1,9 +1,9 @@
 package designs.facebook;
 
-import entities.Post;
-import entities.User;
-import services.NewsFeed;
-import services.UserManager;
+import designs.facebook.entities.Post;
+import designs.facebook.entities.User;
+import designs.facebook.services.NewsFeed;
+import designs.facebook.services.UserManager;
 
 public class FlipProj {
 

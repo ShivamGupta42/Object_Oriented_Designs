@@ -1,0 +1,78 @@
+Communication System
+
+Sms
+Email
+Push
+
+
+Functional Requirements:
+-> Multiple microservices should be able to push events into the communication system
+-> Multiple publishing channels should be supported
+-> Set event priority
+-> Retrial for each event
+-> Delay / Scheduling events
+
+Non Functional Requirements:
+-> Scale: (Throughput / QPS / Bandwidth / Storage / Cache Estimations)
+-> Latency > Consistency
+-> Reliable
+
+
+
+Actors:
+-> Microservices as user
+
+UseCases:
+ -> should be able to consume an event for a particular channel and priority
+ -> based on priority (other filters) events should be published to their designated channels
+ -> For every event, there should be a configurable no of retrials and scheduling possible
+
+
+Core Entities:
+
+ Subscription - (retrials, eventType, pushConfiguration, JsonSchema)
+
+ JsonSchema
+ Transformer
+ PublishingChannelId
+retrials
+
+ EventInterface
+ Event ->  data , priority, subscriptionId, delay
+
+
+
+
+
+PublishingChannel
+       -> SendAnEvent()
+
+
+ PriorityQueue ->  sort based on priority + other filters
+ EventPublisherThread -> has access to central priorityQueue
+
+
+
+
+              Message : {}
+
+             Event: {
+                   “eventId” :””,
+                    “subscriptionId”:””,
+                    “Priority”:””,
+                     “Delay” :””,
+                      “Date”: {
+                       “phoneNumber”: “+91…..”,
+                        “messageBody”: “Welome ……. ”
+
+                   }
+               }
+
+
+
+
+
+M1<P1> | M2<P3> | M1<P3>
+
+
+P(p,t) -> a.

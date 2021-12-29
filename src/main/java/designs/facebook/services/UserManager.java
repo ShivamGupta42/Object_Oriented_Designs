@@ -1,6 +1,6 @@
 package designs.facebook.services;
 
-import entities.User;
+import designs.facebook.entities.User;
 import lombok.Data;
 
 import java.time.LocalDateTime;

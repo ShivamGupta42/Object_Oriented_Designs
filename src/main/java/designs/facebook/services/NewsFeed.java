@@ -1,7 +1,7 @@
 package designs.facebook.services;
 
-import entities.Post;
-import entities.User;
+import designs.facebook.entities.Post;
+import designs.facebook.entities.User;
 import lombok.Data;
 
 import java.time.LocalDateTime;
