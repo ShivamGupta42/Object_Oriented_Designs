@@ -1,0 +1,60 @@
+
+
+Functional Requirements:
+-> Multiple-buildings
+-> Type of vehicles parked in each building
+-> Total no of vehicles parked across all buildings
+-> Total no of vehicles parked across in a single building
+-> Time series data of total no of
+
+
+
+Database Design:
+
+
+RDBMS:
+
+City
+  - locationId
+  - ....
+
+ParkingLot
+  - id
+  - city (fk)
+
+Level
+  - id
+  - parking_lot_id (fk)
+
+Slot
+   - id
+   - type (S/M/L)
+   - level_id (fk)
+
+
+Level_Slots
+    - slot_id
+    - vehicle_license_number
+    - entry_time
+
+
+
+
+Controller:
+    VehicleManagementController
+        -> GET Search for a vehicle
+        -> GET Search availability of a slot type for a vehicle in a building
+        -> POST Try to allocate a slot to a vehicle at a particular level in a building
+        -> POST Try to allocate a slot to a vehicle at any level in a building
+        -> DELETE mark exit of a vehicle
+
+    BillGeneratorController
+        -> GET generate bill of a vehicle
+        -> GET generate bill of a vehicle at an adjustable rate
+
+    ParkingLotController
+        -> GET all the levels and type of slots in a building
+        -> GET all the vehicles present in a building
+
+
+
